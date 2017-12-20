@@ -30,3 +30,6 @@ Thumbs.db
 .classpath
 .project
 .idea
+idea/
+.idea/
+.out
