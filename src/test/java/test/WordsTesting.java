@@ -11,4 +11,9 @@ public class WordsTesting {
 		fail("Not yet implemented");
 	}
 
+	@Test
+	public void test1() {
+		assertEquals(5, 5);
+	}
+
 }
