@@ -38,7 +38,9 @@ public class WordPermutations {
         //letters "a", "b", and "c".
 
         //the int array "switchNow" has each element correlate to the
-        // given digit from the string in the parameter.
+        // given digit from the string in the parameter. Each index
+        // will begin at 0 and increment after the previous 
+        // indecies have gone through one full permutation.
         int[] magnitude = new int[number.length()];
         int[] switchNow = new int[number.length()];
         int totalMag = 1;
