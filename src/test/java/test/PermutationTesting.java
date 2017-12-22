@@ -3,7 +3,6 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 import words.WordPermutations;
-
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
