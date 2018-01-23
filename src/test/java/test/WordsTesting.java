@@ -16,6 +16,7 @@ public class WordsTesting {
 		try {
 			PWKTest = WordLengths.createWordMap();
 			assertTrue(PWKTest.get(3).contains("the"));
+			System.out.println(PWKTest.get(3));
 		} catch (Exception e) {
 		}
 		;

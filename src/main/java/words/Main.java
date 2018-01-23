@@ -33,7 +33,7 @@ public class Main {
             for(String s: WordsOfLength)
             {
                 for(String k: PossibleWords){
-                    if(s==k){
+                    if(s.equals(k)){
                         RealWords.add(s);
                     }
                 }
