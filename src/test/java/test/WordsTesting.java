@@ -5,8 +5,11 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 import words.WordLengths;
 
+import java.io.IOException;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class WordsTesting {
 
@@ -63,7 +66,15 @@ public class WordsTesting {
 			assertTrue(!PWKTest.get(9).contains("penis"));
 		} catch (Exception e) {
 		}
-		;
+	}
+	@Test
+	public void test5() throws IOException{
+		HashMap<Integer, List<String>> PWKTest = WordLengths.createWordMap();
+		Set<String> bossman = new HashSet<>();
+		for(String s : PWKTest.get(5)){
+			bossman.add(s);
+		}
+		assertTrue(bossman.size() == PWKTest.get(5).size());
 	}
 
 }
